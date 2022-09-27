@@ -1,0 +1,22 @@
+<ion-content slot="fixed">
+  <form
+    class="main"
+    [formGroup]="loginForm"
+    autocomplete="off"
+    (ngSubmit)="onHandleLogin()">
+    <ion-label>Welcome to</ion-label>
+    <img src="../../../assets/icon/logo.png" alt="Logo UKB" />
+    <ion-input
+      placeholder="Nhập tài khoản"
+      formControlName="username">
+    </ion-input>
+    <ion-input
+      placeholder="Nhập mật khẩu"
+      formControlName="password">
+    </ion-input>
+    <a href="#">Quên mật khẩu?</a>
+    <div class="button-group">
+      <ion-button type="submit" >Đăng nhập</ion-button>
+    </div>
+  </form>  
+</ion-content>
