@@ -1,0 +1,7 @@
+{
+  "name": "UKBApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
