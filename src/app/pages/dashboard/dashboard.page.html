@@ -1,0 +1,68 @@
+<ion-content slot="fixed">
+  <header id="header">
+    <div class="info">
+      <ion-avatar>
+        <img alt="Silhouette of a person's head"
+          src="https://i.pinimg.com/564x/bd/01/4e/bd014e320cb0fc316a4875696c2c56df.jpg" />
+      </ion-avatar>
+      <h1>
+        <span>Xin chào, Mai</span>
+      </h1>
+      <ion-icon name="menu-outline"></ion-icon>
+    </div>
+    <div class="info-detail">
+      <div class="code">Mã sinh viên: <span>06d4800036</span></div>
+      <div class="name">Tên sinh viên: <span>vũ thị ngọc mai</span></div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Bảng điều khiển</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <app-item-feature
+            [title]="'Điểm danh'"
+            [direction]="133.15"
+            [colorStart]="'#4DCFFC'"
+            [percenColorStart]="19.98"
+            [colorStop]="'#A2E5FD'"
+            [percenColorStop]="79.65"
+            (handleGotoFeature)="handleGotoFeature($event)">
+          </app-item-feature>
+        </ion-col>
+        <ion-col size="4">
+          <app-item-feature>
+          </app-item-feature>
+        </ion-col>
+        <ion-col size="4">
+          <app-item-feature>
+          </app-item-feature>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </main>
+
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button (click)="showAlert()">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button (click)="showAlert()">
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-badge color="danger">10</ion-badge>
+      </ion-tab-button>
+
+      <ion-tab-button (click)="showAlert()">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button (click)="showAlert()">
+        <ion-icon name="help-circle-outline"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
