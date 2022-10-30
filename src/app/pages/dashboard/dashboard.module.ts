@@ -8,7 +8,7 @@ import { DashboardPageRoutingModule } from './dashboard-routing.module';
 
 import { DashboardPage } from './dashboard.page';
 import { ShareService } from 'src/app/providers/share.service';
-import { ItemFeatureComponent } from 'src/app/components/item-feature/item-featre.component';
+import { ItemFeatureComponent } from 'src/app/components/item-feature/item-feature.component';
 
 @NgModule({
   imports: [

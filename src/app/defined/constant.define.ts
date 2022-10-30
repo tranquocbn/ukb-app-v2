@@ -1,4 +1,4 @@
-export const HOST = 'http://127.0.0.1';
+export const HOST = 'http://127.0.0.1:3000';
 export const URL = `${HOST}/api`;
 export const MAX_LENGTH_CODE = 10;
 export const MAX_LENGTH_PASSWORD = 32;

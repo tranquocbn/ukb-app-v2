@@ -15,8 +15,8 @@ export class DashboardPage implements OnInit {
   ngOnInit() {
   }
 
-  public showAlert() {
-    this.shareService.toast('Chức năng đang phát triển', 'dark', 'bottom');
+  public async showAlert() {
+    await this.shareService.toast('Chức năng đang phát triển', 'dark', 'bottom');
   }
 
   public handleGotoFeature(val: string) {

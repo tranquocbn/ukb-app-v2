@@ -1,9 +1,11 @@
-<ion-content slot="fixed">
+<ion-content>
   <header id="header">
     <div class="info">
       <ion-avatar>
-        <img alt="Silhouette of a person's head"
-          src="https://i.pinimg.com/564x/bd/01/4e/bd014e320cb0fc316a4875696c2c56df.jpg" />
+        <img
+          alt="Silhouette of a person's head"
+          src="https://i.pinimg.com/564x/bd/01/4e/bd014e320cb0fc316a4875696c2c56df.jpg"
+        />
       </ion-avatar>
       <h1>
         <span>Xin chào, Mai</span>
@@ -25,26 +27,64 @@
             [title]="'Điểm danh'"
             [direction]="133.15"
             [colorStart]="'#4DCFFC'"
-            [percenColorStart]="19.98"
+            [percentColorStart]="19.98"
             [colorStop]="'#A2E5FD'"
-            [percenColorStop]="79.65"
-            (handleGotoFeature)="handleGotoFeature($event)">
+            [percentColorStop]="79.65"
+            (gotoFeature)="handleGotoFeature($event)"
+          >
           </app-item-feature>
         </ion-col>
         <ion-col size="4">
-          <app-item-feature>
+          <app-item-feature></app-item-feature>
+        </ion-col>
+        <ion-col size="4">
+          <app-item-feature> </app-item-feature>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <app-item-feature
+            [title]="'Điểm danh'"
+            [direction]="133.15"
+            [colorStart]="'#4DCFFC'"
+            [percentColorStart]="19.98"
+            [colorStop]="'#A2E5FD'"
+            [percentColorStop]="79.65"
+            (gotoFeature)="handleGotoFeature($event)"
+          >
           </app-item-feature>
         </ion-col>
         <ion-col size="4">
-          <app-item-feature>
+          <app-item-feature></app-item-feature>
+        </ion-col>
+        <ion-col size="4">
+          <app-item-feature> </app-item-feature>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <app-item-feature
+            [title]="'Điểm danh'"
+            [direction]="133.15"
+            [colorStart]="'#4DCFFC'"
+            [percentColorStart]="19.98"
+            [colorStop]="'#A2E5FD'"
+            [percentColorStop]="79.65"
+            (gotoFeature)="handleGotoFeature($event)"
+          >
           </app-item-feature>
+        </ion-col>
+        <ion-col size="4">
+          <app-item-feature></app-item-feature>
+        </ion-col>
+        <ion-col size="4">
+          <app-item-feature> </app-item-feature>
         </ion-col>
       </ion-row>
     </ion-grid>
   </main>
-
-
-
+</ion-content>
+<ion-toolbar>
   <ion-tabs>
     <ion-tab-bar slot="bottom">
       <ion-tab-button (click)="showAlert()">
@@ -65,4 +105,4 @@
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
-</ion-content>
+</ion-toolbar>
